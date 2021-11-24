@@ -197,7 +197,7 @@ noCuenta=StringVar()
 var = StringVar()
 var.set(None)
 
-Title = Label(miFrame, text="FOLIADO DE OPs BAJIO")
+Title = Label(miFrame, text="FOLIADO DE OPs LEON")
 Title.config(
     fg="#F7F9F9",
     bg="#2980B9",
