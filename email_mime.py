@@ -12,9 +12,9 @@ def Envio_pdf(dir_destino, e_vendedor, e_ejecutivo, e_asunto, PdfFilename):
     mail_ejecutivo = str(e_ejecutivo)
 
     remitente = 'notificaciones@jiroseguros.com.mx'
-    destinatarios = [mail_vendedor, mail_ejecutivo,'gpaloalto@jiro.mx','finanzasbajio@jiro.mx']
+    destinatarios = [mail_vendedor, 'mesadecontrol.leon@jiro.mx']
     asunto = e_asunto 
-    cuerpo = 'FAVOR DE NO CONTESTAR ESTE MENSAJE, esta cuenta es solo para enviar notificaciones.\n\nEstimado agente Jiro, se anexa detalle de comisiones a pagarésta semana.\nAntes de facturar favor de confirmar con Monserrat Acosta,\n tel. 5555 66 9566 ext. 108, correo: macosta@jiro.mx\n\nCualquier aclaración al correo sobre las comisiones reflejadas en este correo escribir a la dirección:\nmesadecontrol@jiroseguros.com.mx\n\nMesa de Control'
+    cuerpo = 'FAVOR DE NO CONTESTAR ESTE MENSAJE, esta cuenta es solo para enviar notificaciones.\n\nEstimado agente Jiro, se anexa detalle de comisiones a pagar ésta semana.\nAntes de facturar favor de confirmar con Brenda Ramírez,\n correo: mesadecontrol.leon@jiro.mx\n\nCualquier aclaración al correo sobre las comisiones reflejadas en este correo escribir a la dirección:\nmesadecontrol.leon@jiro.mx\n\nMesa de Control'
     nombre_adjunto = PdfFilename
     ruta_adjunto = folderOps + "/final/" + nombre_adjunto
 
