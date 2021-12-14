@@ -50,7 +50,7 @@ def Envio_pdf(dir_destino, e_vendedor, e_ejecutivo, e_asunto, PdfFilename):
     sesion_smtp.starttls()
 
     # Iniciamos sesión en el servidor
-    sesion_smtp.login('notificaciones@jiro.mx','JIROnotifica2020$')
+    sesion_smtp.login('notificaciones@jiro.mx','EB61qCtS/8db')
 
     # Convertimos el objeto mensaje a texto
     texto = mensaje.as_string()
