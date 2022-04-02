@@ -2,6 +2,16 @@ import PyPDF2
 
 
 def Orden_final(dir_origen, Folio_str, PdfFileName):
+    new_file = Folio_str + '.pdf'
+    new_path = dir_origen + "/final/" + new_file
+
+    if os.path.isfile(new_path) == True:
+        Folio_full = Folio_str + 'x'
+ 
+    else:
+        Folio_full = str(Folio_str)
+
+
     op_pdf = dir_origen + "/" + PdfFileName
     ordenOrigin = open(op_pdf, 'rb')
     pdfReader = PyPDF2.PdfFileReader(ordenOrigin)
@@ -14,7 +24,7 @@ def Orden_final(dir_origen, Folio_str, PdfFileName):
     for pageNum in range(1, pdfReader.numPages):
         pageObj = pdfReader.getPage(pageNum)
         pdfWriter.addPage(pageObj)
-    newFile = str(Folio_str) + '.pdf'
+    newFile = str(Folio_full) + '.pdf'
     folio_path = dir_origen + "/final/" + newFile 
     resultPdfFile = open(folio_path, 'wb')
     pdfWriter.write(resultPdfFile)
